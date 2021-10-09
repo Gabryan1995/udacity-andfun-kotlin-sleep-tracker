@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/gabry/AndroidApps/andfun-kotlin-sleep-tracker-starter-code/app/src/main/res/drawable/ic_sleep_active.xml" value="0.23541666666666666" />
+        <entry key="..\:/Users/gabry/AndroidApps/andfun-kotlin-sleep-tracker-starter-code/app/src/main/res/layout/activity_main.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/gabry/AndroidApps/andfun-kotlin-sleep-tracker-starter-code/app/src/main/res/layout/fragment_sleep_quality.xml" value="0.3451086956521739" />
+        <entry key="..\:/Users/gabry/AndroidApps/andfun-kotlin-sleep-tracker-starter-code/app/src/main/res/layout/fragment_sleep_tracker.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/gabry/AndroidApps/andfun-kotlin-sleep-tracker-starter-code/app/src/main/res/layout/list_item_sleep_night.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/gabry/AndroidApps/andfun-kotlin-sleep-tracker-starter-code/app/src/main/res/layout/text_item_view.xml" value="0.21927083333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

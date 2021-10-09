@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.databinding:databinding-ktx:7.0.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6528e9ab9a44d88af24e2fffd86783c6/transformed/jetified-databinding-ktx-7.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/484b693fa98f240591d0bd7b1952a61f/transformed/jetified-databinding-ktx-7.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2efe0755553febdd3e87ce5dc920e5d9/transformed/jetified-databinding-ktx-7.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bbc9b247ebdd5e2d21a8e22628de7588/transformed/jetified-databinding-ktx-7.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c993ae2fac0d1692544fca492525f647/transformed/jetified-databinding-ktx-7.0.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c12d8ffc8784cc5040b1970c9e9f9f83/transformed/jetified-databinding-ktx-7.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c12d8ffc8784cc5040b1970c9e9f9f83/transformed/jetified-databinding-ktx-7.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c12d8ffc8784cc5040b1970c9e9f9f83/transformed/jetified-databinding-ktx-7.0.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-ktx/7.0.2/3f2d6ae53f71314c730846bcf533a3b7879cbedf/databinding-ktx-7.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
