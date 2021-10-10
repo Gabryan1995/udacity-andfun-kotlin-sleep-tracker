@@ -2261,7 +2261,6 @@ id showTitle
 id sin
 id skipCollapsed
 id skipped
-id sleep_length
 id sleep_list
 id sleep_quality_fragment
 id sleep_tracker_fragment

@@ -13,10 +13,7 @@ public class ListItemSleepNightBindingImpl extends ListItemSleepNightBinding  {
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
         sIncludes = null;
-        sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.quality_image, 1);
-        sViewsWithIds.put(R.id.sleep_length, 2);
-        sViewsWithIds.put(R.id.quality_string, 3);
+        sViewsWithIds = null;
     }
     // views
     @NonNull
@@ -27,16 +24,17 @@ public class ListItemSleepNightBindingImpl extends ListItemSleepNightBinding  {
     // Inverse Binding Event Handlers
 
     public ListItemSleepNightBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds));
     }
     private ListItemSleepNightBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (android.widget.ImageView) bindings[1]
-            , (android.widget.TextView) bindings[3]
             , (android.widget.TextView) bindings[2]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);
+        this.qualityImage.setTag(null);
+        this.qualityString.setTag(null);
         setRootTag(root);
         // listeners
         invalidateAll();
@@ -74,6 +72,11 @@ public class ListItemSleepNightBindingImpl extends ListItemSleepNightBinding  {
 
     public void setSleep(@Nullable com.example.android.trackmysleepquality.database.SleepNight Sleep) {
         this.mSleep = Sleep;
+        synchronized(this) {
+            mDirtyFlags |= 0x1L;
+        }
+        notifyPropertyChanged(BR.sleep);
+        super.requestRebind();
     }
 
     @Override
@@ -90,7 +93,17 @@ public class ListItemSleepNightBindingImpl extends ListItemSleepNightBinding  {
             dirtyFlags = mDirtyFlags;
             mDirtyFlags = 0;
         }
+        com.example.android.trackmysleepquality.database.SleepNight sleep = mSleep;
+
+        if ((dirtyFlags & 0x3L) != 0) {
+        }
         // batch finished
+        if ((dirtyFlags & 0x3L) != 0) {
+            // api target 1
+
+            com.example.android.trackmysleepquality.sleeptracker.BindingUtilsKt.setSleepImage(this.qualityImage, sleep);
+            com.example.android.trackmysleepquality.sleeptracker.BindingUtilsKt.setSleepQualityString(this.qualityString, sleep);
+        }
     }
     // Listener Stub Implementations
     // callback impls

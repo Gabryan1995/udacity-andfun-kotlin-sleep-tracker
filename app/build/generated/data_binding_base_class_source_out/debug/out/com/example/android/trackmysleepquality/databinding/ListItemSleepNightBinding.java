@@ -23,18 +23,14 @@ public abstract class ListItemSleepNightBinding extends ViewDataBinding {
   @NonNull
   public final TextView qualityString;
 
-  @NonNull
-  public final TextView sleepLength;
-
   @Bindable
   protected SleepNight mSleep;
 
   protected ListItemSleepNightBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageView qualityImage, TextView qualityString, TextView sleepLength) {
+      ImageView qualityImage, TextView qualityString) {
     super(_bindingComponent, _root, _localFieldCount);
     this.qualityImage = qualityImage;
     this.qualityString = qualityString;
-    this.sleepLength = sleepLength;
   }
 
   public abstract void setSleep(@Nullable SleepNight sleep);
