@@ -20,6 +20,12 @@ public class SleepTrackerFragmentDirections {
     return new ActionSleepTrackerFragmentToSleepQualityFragment(sleepNightKey);
   }
 
+  @NonNull
+  public static ActionSleepTrackerFragmentToSleepDetailFragment actionSleepTrackerFragmentToSleepDetailFragment(
+      long sleepNightKey) {
+    return new ActionSleepTrackerFragmentToSleepDetailFragment(sleepNightKey);
+  }
+
   public static class ActionSleepTrackerFragmentToSleepQualityFragment implements NavDirections {
     private final HashMap arguments = new HashMap();
 
@@ -89,6 +95,80 @@ public class SleepTrackerFragmentDirections {
     @Override
     public String toString() {
       return "ActionSleepTrackerFragmentToSleepQualityFragment(actionId=" + getActionId() + "){"
+          + "sleepNightKey=" + getSleepNightKey()
+          + "}";
+    }
+  }
+
+  public static class ActionSleepTrackerFragmentToSleepDetailFragment implements NavDirections {
+    private final HashMap arguments = new HashMap();
+
+    @SuppressWarnings("unchecked")
+    private ActionSleepTrackerFragmentToSleepDetailFragment(long sleepNightKey) {
+      this.arguments.put("sleepNightKey", sleepNightKey);
+    }
+
+    @NonNull
+    @SuppressWarnings("unchecked")
+    public ActionSleepTrackerFragmentToSleepDetailFragment setSleepNightKey(long sleepNightKey) {
+      this.arguments.put("sleepNightKey", sleepNightKey);
+      return this;
+    }
+
+    @Override
+    @SuppressWarnings("unchecked")
+    @NonNull
+    public Bundle getArguments() {
+      Bundle __result = new Bundle();
+      if (arguments.containsKey("sleepNightKey")) {
+        long sleepNightKey = (long) arguments.get("sleepNightKey");
+        __result.putLong("sleepNightKey", sleepNightKey);
+      }
+      return __result;
+    }
+
+    @Override
+    public int getActionId() {
+      return R.id.action_sleep_tracker_fragment_to_sleepDetailFragment;
+    }
+
+    @SuppressWarnings("unchecked")
+    public long getSleepNightKey() {
+      return (long) arguments.get("sleepNightKey");
+    }
+
+    @Override
+    public boolean equals(Object object) {
+      if (this == object) {
+          return true;
+      }
+      if (object == null || getClass() != object.getClass()) {
+          return false;
+      }
+      ActionSleepTrackerFragmentToSleepDetailFragment that = (ActionSleepTrackerFragmentToSleepDetailFragment) object;
+      if (arguments.containsKey("sleepNightKey") != that.arguments.containsKey("sleepNightKey")) {
+        return false;
+      }
+      if (getSleepNightKey() != that.getSleepNightKey()) {
+        return false;
+      }
+      if (getActionId() != that.getActionId()) {
+        return false;
+      }
+      return true;
+    }
+
+    @Override
+    public int hashCode() {
+      int result = 1;
+      result = 31 * result + (int)(getSleepNightKey() ^ (getSleepNightKey() >>> 32));
+      result = 31 * result + getActionId();
+      return result;
+    }
+
+    @Override
+    public String toString() {
+      return "ActionSleepTrackerFragmentToSleepDetailFragment(actionId=" + getActionId() + "){"
           + "sleepNightKey=" + getSleepNightKey()
           + "}";
     }

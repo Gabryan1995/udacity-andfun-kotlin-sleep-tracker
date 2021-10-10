@@ -4,6 +4,10 @@
         "source": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/src/main/res/layout/list_item_sleep_night.xml"
     },
     {
+        "merged": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_sleep_detail.xml",
+        "source": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/src/main/res/layout/fragment_sleep_detail.xml"
+    },
+    {
         "merged": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_sleep_tracker.xml",
         "source": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/src/main/res/layout/fragment_sleep_tracker.xml"
     },

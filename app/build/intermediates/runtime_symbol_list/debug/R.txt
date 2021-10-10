@@ -1943,8 +1943,10 @@ int id action_menu_presenter 0x7f0a003f
 int id action_mode_bar 0x7f0a0040
 int id action_mode_bar_stub 0x7f0a0041
 int id action_mode_close_button 0x7f0a0042
+int id action_sleepDetailFragment_to_sleep_tracker_fragment 0x7f0a01f0
 int id action_sleepQualityFragment_to_sleepTrackerFragment 0x7f0a0043
 int id action_sleepTrackerFragment_to_sleepQualityFragment 0x7f0a0044
+int id action_sleep_tracker_fragment_to_sleepDetailFragment 0x7f0a01f1
 int id action_text 0x7f0a0045
 int id actions 0x7f0a0046
 int id activity_chooser_view_content 0x7f0a0047
@@ -2260,6 +2262,8 @@ int id showTitle 0x7f0a017c
 int id sin 0x7f0a017d
 int id skipCollapsed 0x7f0a017e
 int id skipped 0x7f0a017f
+int id sleep_detail_fragment 0x7f0a01f2
+int id sleep_length 0x7f0a0180
 int id sleep_list 0x7f0a0181
 int id sleep_quality_fragment 0x7f0a0182
 int id sleep_tracker_fragment 0x7f0a0183
@@ -2456,6 +2460,7 @@ int layout design_navigation_menu 0x7f0d0029
 int layout design_navigation_menu_item 0x7f0d002a
 int layout design_text_input_end_icon 0x7f0d002b
 int layout design_text_input_start_icon 0x7f0d002c
+int layout fragment_sleep_detail 0x7f0d0075
 int layout fragment_sleep_quality 0x7f0d002d
 int layout fragment_sleep_tracker 0x7f0d002e
 int layout list_item_sleep_night 0x7f0d002f

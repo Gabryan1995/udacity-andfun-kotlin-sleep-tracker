@@ -1944,8 +1944,10 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_sleepDetailFragment_to_sleep_tracker_fragment
 id action_sleepQualityFragment_to_sleepTrackerFragment
 id action_sleepTrackerFragment_to_sleepQualityFragment
+id action_sleep_tracker_fragment_to_sleepDetailFragment
 id action_text
 id actions
 id activity_chooser_view_content
@@ -2261,6 +2263,8 @@ id showTitle
 id sin
 id skipCollapsed
 id skipped
+id sleep_detail_fragment
+id sleep_length
 id sleep_list
 id sleep_quality_fragment
 id sleep_tracker_fragment
@@ -2457,6 +2461,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_sleep_detail
 layout fragment_sleep_quality
 layout fragment_sleep_tracker
 layout list_item_sleep_night

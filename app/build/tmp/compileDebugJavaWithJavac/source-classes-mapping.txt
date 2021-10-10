@@ -1,3 +1,5 @@
+com/example/android/trackmysleepquality/sleepdetail/SleepDetailFragmentDirections.java
+ com.example.android.trackmysleepquality.sleepdetail.SleepDetailFragmentDirections
 com/example/android/trackmysleepquality/generated/callback/OnClickListener.java
  com.example.android.trackmysleepquality.generated.callback.OnClickListener
  com.example.android.trackmysleepquality.generated.callback.OnClickListener$Listener
@@ -8,6 +10,8 @@ androidx/databinding/library/baseAdapters/BR.java
 com/example/android/trackmysleepquality/database/SleepDatabase_Impl.java
  com.example.android.trackmysleepquality.database.SleepDatabase_Impl
  com.example.android.trackmysleepquality.database.SleepDatabase_Impl$1
+com/example/android/trackmysleepquality/databinding/FragmentSleepDetailBindingImpl.java
+ com.example.android.trackmysleepquality.databinding.FragmentSleepDetailBindingImpl
 com/example/android/trackmysleepquality/databinding/ListItemSleepNightBindingImpl.java
  com.example.android.trackmysleepquality.databinding.ListItemSleepNightBindingImpl
 com/example/android/trackmysleepquality/DataBinderMapperImpl.java
@@ -24,6 +28,8 @@ com/example/android/trackmysleepquality/sleepquality/SleepQualityFragmentArgs.ja
  com.example.android.trackmysleepquality.sleepquality.SleepQualityFragmentArgs$Builder
 com/example/android/trackmysleepquality/databinding/FragmentSleepQualityBindingImpl.java
  com.example.android.trackmysleepquality.databinding.FragmentSleepQualityBindingImpl
+com/example/android/trackmysleepquality/databinding/FragmentSleepDetailBinding.java
+ com.example.android.trackmysleepquality.databinding.FragmentSleepDetailBinding
 com/example/android/trackmysleepquality/databinding/ListItemSleepNightBinding.java
  com.example.android.trackmysleepquality.databinding.ListItemSleepNightBinding
 com/example/android/trackmysleepquality/BR.java
@@ -31,6 +37,7 @@ com/example/android/trackmysleepquality/BR.java
 com/example/android/trackmysleepquality/database/SleepDatabaseDao_Impl.java
  com.example.android.trackmysleepquality.database.SleepDatabaseDao_Impl
  com.example.android.trackmysleepquality.database.SleepDatabaseDao_Impl$1
+ com.example.android.trackmysleepquality.database.SleepDatabaseDao_Impl$10
  com.example.android.trackmysleepquality.database.SleepDatabaseDao_Impl$2
  com.example.android.trackmysleepquality.database.SleepDatabaseDao_Impl$3
  com.example.android.trackmysleepquality.database.SleepDatabaseDao_Impl$4
@@ -45,9 +52,14 @@ com/example/android/trackmysleepquality/DataBindingTriggerClass.java
  com.example.android.trackmysleepquality.DataBindingTriggerClass
 com/example/android/trackmysleepquality/BuildConfig.java
  com.example.android.trackmysleepquality.BuildConfig
+com/example/android/trackmysleepquality/sleepdetail/SleepDetailFragmentArgs.java
+ com.example.android.trackmysleepquality.sleepdetail.SleepDetailFragmentArgs
+ com.example.android.trackmysleepquality.sleepdetail.SleepDetailFragmentArgs$1
+ com.example.android.trackmysleepquality.sleepdetail.SleepDetailFragmentArgs$Builder
 com/example/android/trackmysleepquality/sleeptracker/SleepTrackerFragmentDirections.java
  com.example.android.trackmysleepquality.sleeptracker.SleepTrackerFragmentDirections
  com.example.android.trackmysleepquality.sleeptracker.SleepTrackerFragmentDirections$1
+ com.example.android.trackmysleepquality.sleeptracker.SleepTrackerFragmentDirections$ActionSleepTrackerFragmentToSleepDetailFragment
  com.example.android.trackmysleepquality.sleeptracker.SleepTrackerFragmentDirections$ActionSleepTrackerFragmentToSleepQualityFragment
 androidx/databinding/DataBindingComponent.java
  androidx.databinding.DataBindingComponent

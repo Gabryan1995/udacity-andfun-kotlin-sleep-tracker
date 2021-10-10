@@ -6,6 +6,7 @@ import android.view.View;
 import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
+import com.example.android.trackmysleepquality.databinding.FragmentSleepDetailBindingImpl;
 import com.example.android.trackmysleepquality.databinding.FragmentSleepQualityBindingImpl;
 import com.example.android.trackmysleepquality.databinding.FragmentSleepTrackerBindingImpl;
 import com.example.android.trackmysleepquality.databinding.ListItemSleepNightBindingImpl;
@@ -20,15 +21,18 @@ import java.util.HashMap;
 import java.util.List;
 
 public class DataBinderMapperImpl extends DataBinderMapper {
-  private static final int LAYOUT_FRAGMENTSLEEPQUALITY = 1;
+  private static final int LAYOUT_FRAGMENTSLEEPDETAIL = 1;
 
-  private static final int LAYOUT_FRAGMENTSLEEPTRACKER = 2;
+  private static final int LAYOUT_FRAGMENTSLEEPQUALITY = 2;
 
-  private static final int LAYOUT_LISTITEMSLEEPNIGHT = 3;
+  private static final int LAYOUT_FRAGMENTSLEEPTRACKER = 3;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(3);
+  private static final int LAYOUT_LISTITEMSLEEPNIGHT = 4;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(4);
 
   static {
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.android.trackmysleepquality.R.layout.fragment_sleep_detail, LAYOUT_FRAGMENTSLEEPDETAIL);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.android.trackmysleepquality.R.layout.fragment_sleep_quality, LAYOUT_FRAGMENTSLEEPQUALITY);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.android.trackmysleepquality.R.layout.fragment_sleep_tracker, LAYOUT_FRAGMENTSLEEPTRACKER);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.android.trackmysleepquality.R.layout.list_item_sleep_night, LAYOUT_LISTITEMSLEEPNIGHT);
@@ -43,6 +47,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         throw new RuntimeException("view must have a tag");
       }
       switch(localizedLayoutId) {
+        case  LAYOUT_FRAGMENTSLEEPDETAIL: {
+          if ("layout/fragment_sleep_detail_0".equals(tag)) {
+            return new FragmentSleepDetailBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for fragment_sleep_detail is invalid. Received: " + tag);
+        }
         case  LAYOUT_FRAGMENTSLEEPQUALITY: {
           if ("layout/fragment_sleep_quality_0".equals(tag)) {
             return new FragmentSleepQualityBindingImpl(component, view);
@@ -106,21 +116,23 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerBrLookup {
-    static final SparseArray<String> sKeys = new SparseArray<String>(5);
+    static final SparseArray<String> sKeys = new SparseArray<String>(6);
 
     static {
       sKeys.put(0, "_all");
       sKeys.put(1, "clickListener");
       sKeys.put(2, "sleep");
-      sKeys.put(3, "sleepQualityViewModel");
-      sKeys.put(4, "sleepTrackerViewModel");
+      sKeys.put(3, "sleepDetailViewModel");
+      sKeys.put(4, "sleepQualityViewModel");
+      sKeys.put(5, "sleepTrackerViewModel");
     }
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(3);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(4);
 
     static {
+      sKeys.put("layout/fragment_sleep_detail_0", com.example.android.trackmysleepquality.R.layout.fragment_sleep_detail);
       sKeys.put("layout/fragment_sleep_quality_0", com.example.android.trackmysleepquality.R.layout.fragment_sleep_quality);
       sKeys.put("layout/fragment_sleep_tracker_0", com.example.android.trackmysleepquality.R.layout.fragment_sleep_tracker);
       sKeys.put("layout/list_item_sleep_night_0", com.example.android.trackmysleepquality.R.layout.list_item_sleep_night);

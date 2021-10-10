@@ -69,7 +69,7 @@ public final class SleepDatabaseDao_Impl implements SleepDatabaseDao {
     this.__preparedStmtOfClear = new SharedSQLiteStatement(__db) {
       @Override
       public String createQuery() {
-        final String _query = "Delete FROM daily_sleep_quality_table";
+        final String _query = "DELETE FROM daily_sleep_quality_table";
         return _query;
       }
     };
@@ -130,7 +130,7 @@ public final class SleepDatabaseDao_Impl implements SleepDatabaseDao {
 
   @Override
   public Object get(final long key, final Continuation<? super SleepNight> continuation) {
-    final String _sql = "SELECT * FROM daily_sleep_quality_table WHERE nightId = ?";
+    final String _sql = "SELECT * from daily_sleep_quality_table WHERE nightId = ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
     _statement.bindLong(_argIndex, key);
@@ -242,6 +242,48 @@ public final class SleepDatabaseDao_Impl implements SleepDatabaseDao {
         }
       }
     }, continuation);
+  }
+
+  @Override
+  public LiveData<SleepNight> getNightWithId(final long key) {
+    final String _sql = "SELECT * from daily_sleep_quality_table WHERE nightId = ?";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    _statement.bindLong(_argIndex, key);
+    return __db.getInvalidationTracker().createLiveData(new String[]{"daily_sleep_quality_table"}, false, new Callable<SleepNight>() {
+      @Override
+      public SleepNight call() throws Exception {
+        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+        try {
+          final int _cursorIndexOfNightId = CursorUtil.getColumnIndexOrThrow(_cursor, "nightId");
+          final int _cursorIndexOfStartTimeMilli = CursorUtil.getColumnIndexOrThrow(_cursor, "start_time_milli");
+          final int _cursorIndexOfEndTimeMilli = CursorUtil.getColumnIndexOrThrow(_cursor, "end_time_milli");
+          final int _cursorIndexOfSleepQuality = CursorUtil.getColumnIndexOrThrow(_cursor, "quality_rating");
+          final SleepNight _result;
+          if(_cursor.moveToFirst()) {
+            final long _tmpNightId;
+            _tmpNightId = _cursor.getLong(_cursorIndexOfNightId);
+            final long _tmpStartTimeMilli;
+            _tmpStartTimeMilli = _cursor.getLong(_cursorIndexOfStartTimeMilli);
+            final long _tmpEndTimeMilli;
+            _tmpEndTimeMilli = _cursor.getLong(_cursorIndexOfEndTimeMilli);
+            final int _tmpSleepQuality;
+            _tmpSleepQuality = _cursor.getInt(_cursorIndexOfSleepQuality);
+            _result = new SleepNight(_tmpNightId,_tmpStartTimeMilli,_tmpEndTimeMilli,_tmpSleepQuality);
+          } else {
+            _result = null;
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    });
   }
 
   public static List<Class<?>> getRequiredConverters() {

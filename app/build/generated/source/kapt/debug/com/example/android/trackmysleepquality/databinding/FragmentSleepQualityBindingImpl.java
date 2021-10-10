@@ -23,13 +23,13 @@ public class FragmentSleepQualityBindingImpl extends FragmentSleepQualityBinding
     @Nullable
     private final android.view.View.OnClickListener mCallback10;
     @Nullable
+    private final android.view.View.OnClickListener mCallback11;
+    @Nullable
     private final android.view.View.OnClickListener mCallback9;
     @Nullable
     private final android.view.View.OnClickListener mCallback7;
     @Nullable
     private final android.view.View.OnClickListener mCallback8;
-    @Nullable
-    private final android.view.View.OnClickListener mCallback5;
     @Nullable
     private final android.view.View.OnClickListener mCallback6;
     // values
@@ -59,12 +59,12 @@ public class FragmentSleepQualityBindingImpl extends FragmentSleepQualityBinding
         this.qualityZeroImage.setTag(null);
         setRootTag(root);
         // listeners
-        mCallback10 = new com.example.android.trackmysleepquality.generated.callback.OnClickListener(this, 6);
-        mCallback9 = new com.example.android.trackmysleepquality.generated.callback.OnClickListener(this, 5);
-        mCallback7 = new com.example.android.trackmysleepquality.generated.callback.OnClickListener(this, 3);
-        mCallback8 = new com.example.android.trackmysleepquality.generated.callback.OnClickListener(this, 4);
-        mCallback5 = new com.example.android.trackmysleepquality.generated.callback.OnClickListener(this, 1);
-        mCallback6 = new com.example.android.trackmysleepquality.generated.callback.OnClickListener(this, 2);
+        mCallback10 = new com.example.android.trackmysleepquality.generated.callback.OnClickListener(this, 5);
+        mCallback11 = new com.example.android.trackmysleepquality.generated.callback.OnClickListener(this, 6);
+        mCallback9 = new com.example.android.trackmysleepquality.generated.callback.OnClickListener(this, 4);
+        mCallback7 = new com.example.android.trackmysleepquality.generated.callback.OnClickListener(this, 2);
+        mCallback8 = new com.example.android.trackmysleepquality.generated.callback.OnClickListener(this, 3);
+        mCallback6 = new com.example.android.trackmysleepquality.generated.callback.OnClickListener(this, 1);
         invalidateAll();
     }
 
@@ -126,36 +126,18 @@ public class FragmentSleepQualityBindingImpl extends FragmentSleepQualityBinding
         if ((dirtyFlags & 0x2L) != 0) {
             // api target 1
 
-            this.qualityFiveImage.setOnClickListener(mCallback10);
-            this.qualityFourImage.setOnClickListener(mCallback9);
-            this.qualityOneImage.setOnClickListener(mCallback6);
-            this.qualityThreeImage.setOnClickListener(mCallback8);
-            this.qualityTwoImage.setOnClickListener(mCallback7);
-            this.qualityZeroImage.setOnClickListener(mCallback5);
+            this.qualityFiveImage.setOnClickListener(mCallback11);
+            this.qualityFourImage.setOnClickListener(mCallback10);
+            this.qualityOneImage.setOnClickListener(mCallback7);
+            this.qualityThreeImage.setOnClickListener(mCallback9);
+            this.qualityTwoImage.setOnClickListener(mCallback8);
+            this.qualityZeroImage.setOnClickListener(mCallback6);
         }
     }
     // Listener Stub Implementations
     // callback impls
     public final void _internalCallbackOnClick(int sourceId , android.view.View callbackArg_0) {
         switch(sourceId) {
-            case 6: {
-                // localize variables for thread safety
-                // sleepQualityViewModel
-                com.example.android.trackmysleepquality.sleepquality.SleepQualityViewModel sleepQualityViewModel = mSleepQualityViewModel;
-                // sleepQualityViewModel != null
-                boolean sleepQualityViewModelJavaLangObjectNull = false;
-
-
-
-                sleepQualityViewModelJavaLangObjectNull = (sleepQualityViewModel) != (null);
-                if (sleepQualityViewModelJavaLangObjectNull) {
-
-
-
-                    sleepQualityViewModel.onSetSleepQuality(5);
-                }
-                break;
-            }
             case 5: {
                 // localize variables for thread safety
                 // sleepQualityViewModel
@@ -174,7 +156,7 @@ public class FragmentSleepQualityBindingImpl extends FragmentSleepQualityBinding
                 }
                 break;
             }
-            case 3: {
+            case 6: {
                 // localize variables for thread safety
                 // sleepQualityViewModel
                 com.example.android.trackmysleepquality.sleepquality.SleepQualityViewModel sleepQualityViewModel = mSleepQualityViewModel;
@@ -188,7 +170,7 @@ public class FragmentSleepQualityBindingImpl extends FragmentSleepQualityBinding
 
 
 
-                    sleepQualityViewModel.onSetSleepQuality(2);
+                    sleepQualityViewModel.onSetSleepQuality(5);
                 }
                 break;
             }
@@ -210,24 +192,6 @@ public class FragmentSleepQualityBindingImpl extends FragmentSleepQualityBinding
                 }
                 break;
             }
-            case 1: {
-                // localize variables for thread safety
-                // sleepQualityViewModel
-                com.example.android.trackmysleepquality.sleepquality.SleepQualityViewModel sleepQualityViewModel = mSleepQualityViewModel;
-                // sleepQualityViewModel != null
-                boolean sleepQualityViewModelJavaLangObjectNull = false;
-
-
-
-                sleepQualityViewModelJavaLangObjectNull = (sleepQualityViewModel) != (null);
-                if (sleepQualityViewModelJavaLangObjectNull) {
-
-
-
-                    sleepQualityViewModel.onSetSleepQuality(0);
-                }
-                break;
-            }
             case 2: {
                 // localize variables for thread safety
                 // sleepQualityViewModel
@@ -243,6 +207,42 @@ public class FragmentSleepQualityBindingImpl extends FragmentSleepQualityBinding
 
 
                     sleepQualityViewModel.onSetSleepQuality(1);
+                }
+                break;
+            }
+            case 3: {
+                // localize variables for thread safety
+                // sleepQualityViewModel
+                com.example.android.trackmysleepquality.sleepquality.SleepQualityViewModel sleepQualityViewModel = mSleepQualityViewModel;
+                // sleepQualityViewModel != null
+                boolean sleepQualityViewModelJavaLangObjectNull = false;
+
+
+
+                sleepQualityViewModelJavaLangObjectNull = (sleepQualityViewModel) != (null);
+                if (sleepQualityViewModelJavaLangObjectNull) {
+
+
+
+                    sleepQualityViewModel.onSetSleepQuality(2);
+                }
+                break;
+            }
+            case 1: {
+                // localize variables for thread safety
+                // sleepQualityViewModel
+                com.example.android.trackmysleepquality.sleepquality.SleepQualityViewModel sleepQualityViewModel = mSleepQualityViewModel;
+                // sleepQualityViewModel != null
+                boolean sleepQualityViewModelJavaLangObjectNull = false;
+
+
+
+                sleepQualityViewModelJavaLangObjectNull = (sleepQualityViewModel) != (null);
+                if (sleepQualityViewModelJavaLangObjectNull) {
+
+
+
+                    sleepQualityViewModel.onSetSleepQuality(0);
                 }
                 break;
             }

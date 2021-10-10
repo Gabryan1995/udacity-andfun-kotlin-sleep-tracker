@@ -7,7 +7,9 @@ public class BR {
 
   public static final int sleep = 2;
 
-  public static final int sleepQualityViewModel = 3;
+  public static final int sleepDetailViewModel = 3;
 
-  public static final int sleepTrackerViewModel = 4;
+  public static final int sleepQualityViewModel = 4;
+
+  public static final int sleepTrackerViewModel = 5;
 }

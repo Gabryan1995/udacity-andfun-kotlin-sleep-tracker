@@ -28,12 +28,16 @@
         "source": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/src/main/res/drawable/ic_sleep_5.xml"
     },
     {
-        "merged": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/build/intermediates/merged_res/debug/layout_fragment_sleep_detail.xml.flat",
+        "source": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/src/main/res/layout/fragment_sleep_detail.xml"
     },
     {
         "merged": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/build/intermediates/merged_res/debug/navigation_navigation.xml.flat",
         "source": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/src/main/res/navigation/navigation.xml"
+    },
+    {
+        "merged": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat",
