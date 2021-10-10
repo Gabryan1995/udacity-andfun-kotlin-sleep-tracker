@@ -27,7 +27,7 @@ buildscript {
         version_lifecycle_extensions = "2.3.1"
         version_lifecycle = "2.3.1"
         version_navigation = '2.4.0-alpha09'
-        version_room = "2.3.0"
+        version_room = "2.4.0-alpha04"
     }
 
     repositories {
