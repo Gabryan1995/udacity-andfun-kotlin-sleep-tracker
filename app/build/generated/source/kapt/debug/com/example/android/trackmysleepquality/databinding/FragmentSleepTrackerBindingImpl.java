@@ -23,7 +23,7 @@ public class FragmentSleepTrackerBindingImpl extends FragmentSleepTrackerBinding
     @Nullable
     private final android.view.View.OnClickListener mCallback3;
     @Nullable
-    private final android.view.View.OnClickListener mCallback1;
+    private final android.view.View.OnClickListener mCallback4;
     @Nullable
     private final android.view.View.OnClickListener mCallback2;
     // values
@@ -47,9 +47,9 @@ public class FragmentSleepTrackerBindingImpl extends FragmentSleepTrackerBinding
         this.stopButton.setTag(null);
         setRootTag(root);
         // listeners
-        mCallback3 = new com.example.android.trackmysleepquality.generated.callback.OnClickListener(this, 3);
-        mCallback1 = new com.example.android.trackmysleepquality.generated.callback.OnClickListener(this, 1);
-        mCallback2 = new com.example.android.trackmysleepquality.generated.callback.OnClickListener(this, 2);
+        mCallback3 = new com.example.android.trackmysleepquality.generated.callback.OnClickListener(this, 2);
+        mCallback4 = new com.example.android.trackmysleepquality.generated.callback.OnClickListener(this, 3);
+        mCallback2 = new com.example.android.trackmysleepquality.generated.callback.OnClickListener(this, 1);
         invalidateAll();
     }
 
@@ -212,9 +212,9 @@ public class FragmentSleepTrackerBindingImpl extends FragmentSleepTrackerBinding
         if ((dirtyFlags & 0x10L) != 0) {
             // api target 1
 
-            this.clearButton.setOnClickListener(mCallback3);
-            this.startButton.setOnClickListener(mCallback1);
-            this.stopButton.setOnClickListener(mCallback2);
+            this.clearButton.setOnClickListener(mCallback4);
+            this.startButton.setOnClickListener(mCallback2);
+            this.stopButton.setOnClickListener(mCallback3);
         }
         if ((dirtyFlags & 0x1cL) != 0) {
             // api target 1
@@ -236,6 +236,23 @@ public class FragmentSleepTrackerBindingImpl extends FragmentSleepTrackerBinding
     // callback impls
     public final void _internalCallbackOnClick(int sourceId , android.view.View callbackArg_0) {
         switch(sourceId) {
+            case 2: {
+                // localize variables for thread safety
+                // sleepTrackerViewModel != null
+                boolean sleepTrackerViewModelJavaLangObjectNull = false;
+                // sleepTrackerViewModel
+                com.example.android.trackmysleepquality.sleeptracker.SleepTrackerViewModel sleepTrackerViewModel = mSleepTrackerViewModel;
+
+
+
+                sleepTrackerViewModelJavaLangObjectNull = (sleepTrackerViewModel) != (null);
+                if (sleepTrackerViewModelJavaLangObjectNull) {
+
+
+                    sleepTrackerViewModel.onStopTracking();
+                }
+                break;
+            }
             case 3: {
                 // localize variables for thread safety
                 // sleepTrackerViewModel != null
@@ -267,23 +284,6 @@ public class FragmentSleepTrackerBindingImpl extends FragmentSleepTrackerBinding
 
 
                     sleepTrackerViewModel.onStartTracking();
-                }
-                break;
-            }
-            case 2: {
-                // localize variables for thread safety
-                // sleepTrackerViewModel != null
-                boolean sleepTrackerViewModelJavaLangObjectNull = false;
-                // sleepTrackerViewModel
-                com.example.android.trackmysleepquality.sleeptracker.SleepTrackerViewModel sleepTrackerViewModel = mSleepTrackerViewModel;
-
-
-
-                sleepTrackerViewModelJavaLangObjectNull = (sleepTrackerViewModel) != (null);
-                if (sleepTrackerViewModelJavaLangObjectNull) {
-
-
-                    sleepTrackerViewModel.onStopTracking();
                 }
                 break;
             }

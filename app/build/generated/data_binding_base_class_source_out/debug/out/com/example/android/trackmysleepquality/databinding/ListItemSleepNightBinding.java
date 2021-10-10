@@ -13,6 +13,7 @@ import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.example.android.trackmysleepquality.R;
 import com.example.android.trackmysleepquality.database.SleepNight;
+import com.example.android.trackmysleepquality.sleeptracker.SleepNightListener;
 import java.lang.Deprecated;
 import java.lang.Object;
 
@@ -26,6 +27,9 @@ public abstract class ListItemSleepNightBinding extends ViewDataBinding {
   @Bindable
   protected SleepNight mSleep;
 
+  @Bindable
+  protected SleepNightListener mClickListener;
+
   protected ListItemSleepNightBinding(Object _bindingComponent, View _root, int _localFieldCount,
       ImageView qualityImage, TextView qualityString) {
     super(_bindingComponent, _root, _localFieldCount);
@@ -38,6 +42,13 @@ public abstract class ListItemSleepNightBinding extends ViewDataBinding {
   @Nullable
   public SleepNight getSleep() {
     return mSleep;
+  }
+
+  public abstract void setClickListener(@Nullable SleepNightListener clickListener);
+
+  @Nullable
+  public SleepNightListener getClickListener() {
+    return mClickListener;
   }
 
   @NonNull
