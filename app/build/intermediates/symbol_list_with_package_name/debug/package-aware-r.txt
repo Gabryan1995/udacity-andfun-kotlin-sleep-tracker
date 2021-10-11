@@ -2464,6 +2464,7 @@ layout design_text_input_start_icon
 layout fragment_sleep_detail
 layout fragment_sleep_quality
 layout fragment_sleep_tracker
+layout header
 layout list_item_sleep_night
 layout material_chip_input_combo
 layout material_clock_display

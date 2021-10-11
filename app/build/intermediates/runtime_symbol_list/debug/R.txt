@@ -2463,6 +2463,7 @@ int layout design_text_input_start_icon 0x7f0d002c
 int layout fragment_sleep_detail 0x7f0d0075
 int layout fragment_sleep_quality 0x7f0d002d
 int layout fragment_sleep_tracker 0x7f0d002e
+int layout header 0x7f0d0076
 int layout list_item_sleep_night 0x7f0d002f
 int layout material_chip_input_combo 0x7f0d0030
 int layout material_clock_display 0x7f0d0031

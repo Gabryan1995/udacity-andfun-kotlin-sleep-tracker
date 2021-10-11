@@ -24,12 +24,12 @@
         "source": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/src/main/res/layout/fragment_sleep_tracker.xml"
     },
     {
-        "merged": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/build/intermediates/merged_res/debug/drawable_ic_sleep_5.xml.flat",
-        "source": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/src/main/res/drawable/ic_sleep_5.xml"
-    },
-    {
         "merged": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/build/intermediates/merged_res/debug/layout_fragment_sleep_detail.xml.flat",
         "source": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/src/main/res/layout/fragment_sleep_detail.xml"
+    },
+    {
+        "merged": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/build/intermediates/merged_res/debug/drawable_ic_sleep_5.xml.flat",
+        "source": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/src/main/res/drawable/ic_sleep_5.xml"
     },
     {
         "merged": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/build/intermediates/merged_res/debug/navigation_navigation.xml.flat",
@@ -90,6 +90,10 @@
     {
         "merged": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/build/intermediates/merged_res/debug/drawable_ic_sleep_4.xml.flat",
         "source": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/src/main/res/drawable/ic_sleep_4.xml"
+    },
+    {
+        "merged": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/build/intermediates/merged_res/debug/layout_header.xml.flat",
+        "source": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/src/main/res/layout/header.xml"
     },
     {
         "merged": "/Users/garrettbryan/Documents/GitHub/andfun-kotlin-sleep-tracker-starter-code/app/build/intermediates/merged_res/debug/layout_list_item_sleep_night.xml.flat",
